@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Centro Médico Vital Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img
+      src="https://img.freepik.com/vector-premium/medicina-farmacia-salud-logotipo-medico-herbario-mas-icono-salud-simbolo-vector-diseno_10135-1107.jpg"
+      alt="Logo del Centro Médico">
+   
+  </header>
+
+  <main>
+    <section class="doctor-form">
+      <h2>Registro de Médicos</h2>
+      <form>
+        <label for="doctor-nombre">Nombre:</label>
+        <input type="text" id="doctor-nombre" name="nombre" required>
+
+        <label for="doctor-apellido">Apellido:</label>
+        <input type="text" id="doctor-apellido" name="apellido" required>
+
+        <label for="doctor-cedula">Número de Cédula:</label>
+        <input type="text" id="doctor-cedula" name="cedula" pattern="[0-9]{9}" required>
+
+        <label for="doctor-especialidad">Especialidad:</label>
+        <select id="doctor-especialidad" name="especialidad">
+          <option value="">Seleccionar especialidad</option>
+          <option value="medicina-general">Medicina General</option>
+          <option value="cardiologia">Cardiología</option>
+          <option value="medicina-interna">Medicina Interna</option>
+          <option value="dermatologia">Dermatología</option>
+          <option value="rehabilitacion-fisica">Rehabilitación Física</option>
+          <option value="psicologia">Psicología</option>
+          <option value="odontologia">Odontología</option>
+          <option value="radiologia">Radiología</option>
+        </select>
+
+
+        <label for="doctor-consultorio">Consultorio:</label>
+        <select id="doctor-consultorio" name="consultorio">
+          <option value="">Seleccionar consultorio</option>
+          <option value="consultorio-101">Consultorio-101 </option>
+          <option value="consultorio-102">Consultorio-102</option>
+          <option value="consultorio-103">Consultorio-103</option>
+          <option value="consultorio-104">Consultorio-104</option>
+          <option value="consultorio-105">Consultorio-105</option>
+
+        </select>
+
+        <label for="doctor-correo">Correo de Contacto:</label>
+        <input type="email" id="doctor-correo" name="correo" required>
+        <button type="submit">Guardar</button>
+        <button onclick="window.location.href='index.html'">Volver al inicio</button>

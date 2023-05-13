@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Centro Médico Vital Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+
+    <img
+      src="https://img.freepik.com/vector-premium/medicina-farmacia-salud-logotipo-medico-herbario-mas-icono-salud-simbolo-vector-diseno_10135-1107.jpg"
+      alt="Logo del Centro Médico">
+    <h1>Centro Médico Vital Life</h1>
+  </header>
+  <main>
+    <section class="paciente-form">
+      <h2> Registro de pacientes</h2>
+      <form>
+        <label for="paciente-nombre">Nombre:</label>
+        <input type="text" id="paciente-nombre" name="nombre" required>
+
+        <label for="paciente-apellido">Apellido:</label>
+        <input type="text" id="paciente-apellido" name="apellido" required>
+        <label for="tipo-documento">Tipo de documento:</label>
+        <select id="tipo-documento" name="Documento">
+
+          <option value="seleccionar-documento">Seleccionar documento </option>
+          <option value="cedula-ciudadania">Cedula de ciudadania </option>
+          <option value="tarjeta-identidad">Tarjeta de identidad</option>
+          <option value="registro-civil">Registro civil</option>
+        </select>
+
+
+        <label for="paciente-numero">Numero de Documento:</label>
+        <input type="text" id="paciente-cedula" name="cedula" pattern="[0-9]{9}" required>
+
+        <label for="paciente-edad">Edad:</label>
+        <input type="number" id="paciente-edad" name="edad" min="0" required>
+
+        <label for="paciente-telefono">Teléfono:</label>
+        <input type="tel" id="paciente-telefono" name="telefono" pattern="[0-9]{9}" required>
+
+        <button type="submit">Guardar</button>
+        <button onclick="window.location.href='index.html'">Volver al inicio</button>
